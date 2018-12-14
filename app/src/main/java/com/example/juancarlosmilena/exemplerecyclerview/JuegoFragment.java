@@ -79,7 +79,7 @@ public class JuegoFragment extends Fragment {
         mClassif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mListener.mostrar_clasificacion();
+                pulsaciones = mListener.mostrar_clasificacion();
             }
         });
 
@@ -117,6 +117,6 @@ public class JuegoFragment extends Fragment {
     public interface JuegoListener {
         // TODO: Update argument type and name
         void contar_pulsaciones(int pulsac);
-        void mostrar_clasificacion();
+        int mostrar_clasificacion();
     }
 }

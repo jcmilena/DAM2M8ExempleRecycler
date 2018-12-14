@@ -4,17 +4,23 @@ import java.util.Date;
 
 public class Partida {
 
-    Date date;
+    String date;
     String jugador;
     int puntuacion;
 
     public Partida(int puntuacion) {
-        this.date = new Date();
+        this.date = new Date().toString();
         this.jugador = "Jugador Inventado";
         this.puntuacion = puntuacion;
     }
 
-    public Date getDate() {
+    public Partida (String data, String jug, String punt){
+        this.date = data;
+        this.jugador = jug;
+        this.puntuacion = Integer.valueOf(punt);
+    }
+
+    public String getDate() {
         return date;
     }
 

@@ -124,7 +124,7 @@ public class PartidaFragment extends Fragment {
 
             Partida p = clasif.get(i);
 
-            partidaHolder.fecha.setText(p.getDate().toString());
+            partidaHolder.fecha.setText(p.getDate());
             partidaHolder.jugador.setText(p.getJugador());
             partidaHolder.puntuacion.setText(Integer.toString(p.getPuntuacion()));
 
